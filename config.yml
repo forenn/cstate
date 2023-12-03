@@ -43,7 +43,7 @@
 
 # What is your status page called?
 # Shows up in the browser bar and meta tags
-title: Eggsample Status
+title: fejzu.pl status
 
 # Should posts, which have a publish date
 # from the future, be built? Useful for
@@ -97,7 +97,7 @@ defaultContentLanguage: en
 #
 # Broken example:
 # baseUrl: /
-baseURL: https://example.com
+baseURL: https://status.fejzu.pl/
 
 # For features like Last modified, you
 # need to use a Git repository. If you
@@ -143,10 +143,9 @@ params:
   # For help, see the wiki:
   # https://github.com/cstate/cstate/wiki/Customization
   categories:
-    - name: North Coast
-      description: The main servers are located here.
+    - name: Polska (Warszawa)
+      description: Tutaj znajdują się nasze serwery dedykowane.
       closed: true
-    - name: Empty Category
     - name: Uncategorized
       untitled: true
 
@@ -158,20 +157,18 @@ params:
   # For help, see the wiki:
   # https://github.com/cstate/cstate/wiki/Customization
   systems:
-    - name: Gateway
-      category: North Coast
-    - name: Backup Gateway
-      category: North Coast
-    - name: Website
-      description: The web frontend for the application.
+    - name: pl-waw-01
+      category: Polska (Warszawa)
+    - name: pl-waw-02
+      category: Polska (Warszawa)
+    - name: Strona
+      description: Strona naszego hostingu
       category: Uncategorized
-      link: https://example.com/
-    - name: API
-      description: The guts of the application.
+      link: https://www.fejzu.pl/
+    - name: Panel
+      description: Panel naszego hostingu
       category: Uncategorized
-    - name: Media Proxy
-      description: This is the service responsible for serving images, audio, and video. It is reliant on our CDN.
-      category: Uncategorized
+      link: https://panel.fejzu.pl/
 
   # What date format to use?
   #
@@ -220,7 +217,7 @@ params:
   #
   # Default: `false`
   # BOOLEAN; `true`, `false`
-  skipSeconds: false
+  skipSeconds: true
 
   # Should there be an automatic "Last updated"
   # text shown below issues?
@@ -292,7 +289,7 @@ params:
   # on the footer and meta tags.
   #
   # Default: We continuously monitor the status of our services and if there are any interruptions, a note will be posted here.
-  description: We continuously monitor the status of our services and if there are any interruptions, a note will be posted here.
+  description: Stale monitorujemy stan naszych usług i jeśli wystąpią jakiekolwiek przerwy, informacja zostanie opublikowana tutaj.
 
   # Tabs on homepage
   # Uncomment to enable.
